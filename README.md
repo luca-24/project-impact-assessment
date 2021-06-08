@@ -32,6 +32,22 @@ The code to execute the algorithms described in the paper is contained in the fo
 - ``supervised_approaches.ipynb``: set of approaches based on supevised classifiers.
 - ``utils.ipynb``: utility functions.
 
+The main notebook to run the approach described in the paper and the competitors is ``supervised_approaches.ipynb``. It uses all the other notebooks (except ``data_preparation.ipynb``) as modules (therefore, the rest of the notebooks should not be run alone). 
+
+The function ``test_classifier`` allows to execute the approach with different classification algorithms and parameters. For example, the following code runs the proposed approach with the optimized parameters:
+```
+parameters={'batch_size':128, 
+            'max_iter':500, 
+            'hidden_layer_sizes':(100,)}
+y_true_test, y_score_test = test_classifier(training_project_docs, test_project_docs, goal_docs,
+                                            feature_type='goal_similarities', 
+                                            scale_features=True,
+                                            algorithm='MLP',
+                                            parameters=parameters)
+```
+Allowed values of ``algorithm`` are 'MLP', 'SVM', 'RandomForest', 'GradientBoosting', 'keras', 'spacy'.
+
+
 ## Data
 
 The datasets used in the experimental section of the paper are publicly availbale through the following resources:
