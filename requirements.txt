@@ -1,0 +1,14 @@
+pandas==1.1.5
+numpy==1.19.5
+unidecode==1.2.0
+gensim==3.8.3
+scikit-learn==0.24.1
+matplotlib==3.3.4
+scipy==1.5.4
+setuptools
+wheel
+spacy==2.3.5
+spacy_langdetect
+
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.2.0/en_core_web_lg-2.2.0.tar.gz#egg=en_core_web_lg
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm
