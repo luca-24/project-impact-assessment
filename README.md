@@ -37,13 +37,13 @@ The code to execute the algorithms described in the paper is contained in the fo
 The datasets used in the experimental section of the paper are publicly availbale through the following resources:
 
 ### RIS3-MCAT
-
-Data platform of the Generalitat de Catalunya, which makes available the data of European projects funded through Horizon2020 with Catalan participation: http://ris3mcat.gencat.cat/#/. 
+Link: http://ris3mcat.gencat.cat/#/.
+Data platform of the Generalitat de Catalunya, which makes available the data of European projects funded through Horizon2020 with Catalan participation: 
 
 The button "Descarrega en csc" in the header of the webpage allows downloading the whole dataset as a .csv file. This file is already available in the ``data`` folder of this repository as ``ris3-mcat-projects.csv``; the cleaned and filtered version with only English text, obtained after running the ``data_preparation.ipynb`` notebook, is available as ``ris3-mcat-projects-cleaned-en.csv``.
 
 ### Sustaibable Development Goals
-
-Official page of the United Nations, describing the 17 goals that represent "the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including poverty, inequality, climate change, environmental degradation, peace and justice". https://www.un.org/sustainabledevelopment/sustainable-development-goals/
+Link: https://www.un.org/sustainabledevelopment/sustainable-development-goals/
+Official page of the United Nations, describing the 17 goals that represent "the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including poverty, inequality, climate change, environmental degradation, peace and justice". 
 
 The textual information about the goal has been manually extracted for each goal (for example, from https://www.un.org/sustainabledevelopment/poverty/) from the general introduction at the top of the page and from the sections "Facts and Figures" and "Goal X Targets". This data is available in the ``data`` folder of this repository as ``un-goals.xlsx``.
